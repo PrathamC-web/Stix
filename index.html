@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STIX - Connect. Create. Collaborate.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/assets/index-BESpCFUe.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>STIX</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#" class="nav-link active" data-section="feed">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    </svg>
+                    Feed
+                </a>
+                <a href="#" class="nav-link" data-section="profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                    Profile
+                </a>
+                <a href="#" class="nav-link" data-section="rooms">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                    Live Rooms
+                </a>
+                <a href="#" class="nav-link" data-section="startup">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                    Startup Hub
+                </a>
+                <a href="#" class="nav-link" data-section="badges">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    Badges
+                </a>
+            </div>
+            <div class="nav-actions">
+                <button class="notification-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
+                    <span class="notification-count">3</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Feed Section -->
+        <section id="feed" class="content-section active">
+            <div class="feed-container">
+                <div class="feed-header">
+                    <h1>Your Feed</h1>
+                    <div class="feed-toggle">
+                        <button class="toggle-btn active" data-feed="algorithm">Algorithm</button>
+                        <button class="toggle-btn" data-feed="chronological">Chronological</button>
+                    </div>
+                </div>
+
+                <!-- Status Creator -->
+                <div class="status-creator">
+                    <div class="status-input">
+                        <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Your avatar" class="status-avatar">
+                        <input type="text" placeholder="What's happening at your college?" class="status-text">
+                    </div>
+                    <div class="status-actions">
+                        <button class="status-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <polyline points="21,15 16,10 5,21"/>
+                            </svg>
+                            Photo
+                        </button>
+                        <button class="status-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Location
+                        </button>
+                        <button class="post-btn">Post</button>
+                    </div>
+                </div>
+
+                <!-- Feed Posts -->
+                <div class="feed-posts">
+                    <div class="post-card">
+                        <div class="post-header">
+                            <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="User" class="post-avatar">
+                            <div class="post-info">
+                                <h4>Sarah Chen</h4>
+                                <p>Computer Science • MIT • Senior</p>
+                                <span class="post-time">2 hours ago</span>
+                            </div>
+                            <div class="post-badges">
+                                <span class="badge coding">Coding Wizard</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>🚀 Just launched our hackathon project! Looking for beta testers from fellow CS students. Our app helps students find study groups based on location and courses. Who's interested?</p>
+                            <div class="post-images">
+                                <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Hackathon project">
+                            </div>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn like-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                                <span>24</span>
+                            </button>
+                            <button class="action-btn comment-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                                <span>8</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                                    <polyline points="16,6 12,2 8,6"/>
+                                    <line x1="12" y1="2" x2="12" y2="15"/>
+                                </svg>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="post-card competition">
+                        <div class="competition-tag">🏆 Competition Alert</div>
+                        <div class="post-header">
+                            <img src="https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="User" class="post-avatar">
+                            <div class="post-info">
+                                <h4>Stanford Entrepreneurship Club</h4>
+                                <p>Official Club • Stanford University</p>
+                                <span class="post-time">5 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3>🎯 Bay Area Innovation Challenge 2024</h3>
+                            <p>Open to all college students in the Bay Area! Prize pool: $50,000. Deadline: March 15th. Categories: AI/ML, FinTech, SustainTech, and HealthTech.</p>
+                            <div class="competition-details">
+                                <div class="detail">
+                                    <strong>Registration:</strong> Free
+                                </div>
+                                <div class="detail">
+                                    <strong>Team Size:</strong> 2-4 members
+                                </div>
+                                <div class="detail">
+                                    <strong>Location:</strong> Stanford Campus
+                                </div>
+                            </div>
+                            <button class="competition-btn">Register Now</button>
+                        </div>
+                    </div>
+
+                    <div class="post-card">
+                        <div class="post-header">
+                            <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="User" class="post-avatar">
+                            <div class="post-info">
+                                <h4>Alex Rodriguez</h4>
+                                <p>Business • UC Berkeley • Junior</p>
+                                <span class="post-time">1 day ago</span>
+                            </div>
+                            <div class="post-badges">
+                                <span class="badge entrepreneur">Entrepreneur</span>
+                                <span class="badge debate">Debate Champion</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>📍 Anyone near campus want to grab coffee and talk about startup ideas? I'm at the library and could use some brainstorming partners!</p>
+                            <div class="proximity-alert">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <span>0.8km away from you</span>
+                            </div>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn like-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                                <span>12</span>
+                            </button>
+                            <button class="action-btn comment-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                </svg>
+                                <span>5</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+                                    <polyline points="16,6 12,2 8,6"/>
+                                    <line x1="12" y1="2" x2="12" y2="15"/>
+                                </svg>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="content-section">
+            <div class="profile-container">
+                <div class="profile-header">
+                    <div class="profile-cover">
+                        <img src="https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&w=800&h=300&fit=crop" alt="Cover">
+                    </div>
+                    <div class="profile-info">
+                        <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Profile" class="profile-avatar">
+                        <div class="profile-details">
+                            <h1>Jamie Thompson</h1>
+                            <p class="profile-tagline">Computer Science • Stanford University • Senior</p>
+                            <p class="profile-bio">Full-stack developer passionate about AI and social impact. Love hiking, indie music, and late-night coding sessions ✨</p>
+                        </div>
+                        <button class="edit-profile-btn">Edit Profile</button>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div class="profile-sidebar">
+                        <div class="profile-card">
+                            <h3>Personal Insights</h3>
+                            <div class="insights">
+                                <div class="insight-item">
+                                    <strong>🎵 Current favorite song:</strong>
+                                    <p>"Flowers" - Miley Cyrus</p>
+                                </div>
+                                <div class="insight-item">
+                                    <strong>🎬 Last movie watched:</strong>
+                                    <p>Everything Everywhere All at Once</p>
+                                </div>
+                                <div class="insight-item">
+                                    <strong>📚 Currently reading:</strong>
+                                    <p>The Pragmatic Programmer</p>
+                                </div>
+                                <div class="insight-item">
+                                    <strong>☕ Coffee order:</strong>
+                                    <p>Oat milk latte with extra shot</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-card">
+                            <h3>Badges & Achievements</h3>
+                            <div class="badges-grid">
+                                <span class="badge coding">Coding Wizard</span>
+                                <span class="badge leadership">Team Leader</span>
+                                <span class="badge volunteer">Volunteer Hero</span>
+                                <span class="badge academic">Dean's List</span>
+                                <span class="badge social">Social Butterfly</span>
+                                <span class="badge innovation">Innovation Award</span>
+                            </div>
+                        </div>
+
+                        <div class="profile-card">
+                            <h3>College Info</h3>
+                            <div class="college-info">
+                                <div class="info-item">
+                                    <strong>Major:</strong> Computer Science
+                                </div>
+                                <div class="info-item">
+                                    <strong>Minor:</strong> Business Administration
+                                </div>
+                                <div class="info-item">
+                                    <strong>Year:</strong> Senior (Class of 2024)
+                                </div>
+                                <div class="info-item">
+                                    <strong>GPA:</strong> 3.8/4.0
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-card">
+                            <h3>Clubs & Activities</h3>
+                            <div class="activities">
+                                <div class="activity-item">
+                                    <strong>Stanford ACM</strong>
+                                    <span>President</span>
+                                </div>
+                                <div class="activity-item">
+                                    <strong>Women in Tech</strong>
+                                    <span>Member</span>
+                                </div>
+                                <div class="activity-item">
+                                    <strong>Volunteer Tutoring</strong>
+                                    <span>Tutor</span>
+                                </div>
+                                <div class="activity-item">
+                                    <strong>Hiking Club</strong>
+                                    <span>Member</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-main">
+                        <div class="status-section">
+                            <h3>Recent Status Updates</h3>
+                            <div class="status-grid">
+                                <div class="status-item">
+                                    <img src="https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Status 1">
+                                    <div class="status-overlay">
+                                        <span>2h ago</span>
+                                    </div>
+                                </div>
+                                <div class="status-item">
+                                    <img src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Status 2">
+                                    <div class="status-overlay">
+                                        <span>5h ago</span>
+                                    </div>
+                                </div>
+                                <div class="status-item">
+                                    <img src="https://images.pexels.com/photos/1181622/pexels-photo-1181622.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Status 3">
+                                    <div class="status-overlay">
+                                        <span>1d ago</span>
+                                    </div>
+                                </div>
+                                <div class="status-add">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                    <span>Add Status</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="posts-section">
+                            <h3>Your Posts</h3>
+                            <div class="user-posts">
+                                <div class="post-card">
+                                    <div class="post-content">
+                                        <p>🎉 Just finished my capstone project! Built a machine learning model that predicts student success rates. Excited to present next week!</p>
+                                        <div class="post-images">
+                                            <img src="https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Capstone project">
+                                        </div>
+                                        <div class="post-stats">
+                                            <span>32 likes • 8 comments • 3 days ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="post-card">
+                                    <div class="post-content">
+                                        <p>Beautiful sunset from the Stanford campus today! Perfect way to end a productive study session 🌅</p>
+                                        <div class="post-images">
+                                            <img src="https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" alt="Sunset">
+                                        </div>
+                                        <div class="post-stats">
+                                            <span>28 likes • 5 comments • 1 week ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Rooms Section -->
+        <section id="rooms" class="content-section">
+            <div class="rooms-container">
+                <div class="rooms-header">
+                    <h1>Live Rooms</h1>
+                    <button class="create-room-btn">+ Create Room</button>
+                </div>
+
+                <div class="rooms-categories">
+                    <button class="category-btn active">All Rooms</button>
+                    <button class="category-btn">Study Groups</button>
+                    <button class="category-btn">Chit Chat</button>
+                    <button class="category-btn">Academic</button>
+                    <button class="category-btn">Entertainment</button>
+                </div>
+
+                <div class="rooms-grid">
+                    <div class="room-card active-room">
+                        <div class="room-header">
+                            <h3>🎮 Gaming & Chill</h3>
+                            <div class="room-participants">
+                                <div class="participant-avatars">
+                                    <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="User">
+                                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="User">
+                                    <img src="https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="User">
+                                    <span class="participant-count">+5</span>
+                                </div>
+                                <span class="live-indicator">LIVE</span>
+                            </div>
+                        </div>
+                        <p class="room-description">Casual gaming discussions and weekend plans</p>
+                        <div class="room-tags">
+                            <span class="tag">Gaming</span>
+                            <span class="tag">Casual</span>
+                        </div>
+                        <button class="join-room-btn">Join Room</button>
+                    </div>
+
+                    <div class="room-card">
+                        <div class="room-header">
+                            <h3>📚 CS Study Group</h3>
+                            <div class="room-participants">
+                                <div class="participant-avatars">
+                                    <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="User">
+                                    <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="User">
+                                    <span class="participant-count">+3</span>
+                                </div>
+                                <span class="live-indicator">LIVE</span>
+                            </div>
+                        </div>
+                        <p class="room-description">Algorithms and data structures study session</p>
+                        <div class="room-tags">
+                            <span class="tag">Study</span>
+                            <span class="tag">Computer Science</span>
+                        </div>
+                        <button class="join-room-btn">Join Room</button>
+                    </div>
+
+                    <div class="room-card">
+                        <div class="room-header">
+                            <h3>☕ Coffee & Gossip</h3>
+                            <div class="room-participants">
+                                <div class="participant-avatars">
+                                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="User">
+                                    <img src="https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="User">
+                                    <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="User">
+                                    <span class="participant-count">+7</span>
+                                </div>
+                                <span class="live-indicator">LIVE</span>
+                            </div>
+                        </div>
+                        <p class="room-description">Campus news, events, and casual conversations</p>
+                        <div class="room-tags">
+                            <span class="tag">Social</span>
+                            <span class="tag">Campus Life</span>
+                        </div>
+                        <button class="join-room-btn">Join Room</button>
+                    </div>
+
+                    <div class="room-card">
+                        <div class="room-header">
+                            <h3>🎵 Music Discovery</h3>
+                            <div class="room-participants">
+                                <div class="participant-avatars">
+                                    <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="User">
+                                    <img src="https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="User">
+                                    <span class="participant-count">+4</span>
+                                </div>
+                                <span class="live-indicator">LIVE</span>
+                            </div>
+                        </div>
+                        <p class="room-description">Share your favorite tracks and discover new music</p>
+                        <div class="room-tags">
+                            <span class="tag">Music</span>
+                            <span class="tag">Entertainment</span>
+                        </div>
+                        <button class="join-room-btn">Join Room</button>
+                    </div>
+
+                    <div class="room-card">
+                        <div class="room-header">
+                            <h3>💼 Career Chat</h3>
+                            <div class="room-participants">
+                                <div class="participant-avatars">
+                                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="User">
+                                    <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="User">
+                                    <span class="participant-count">+2</span>
+                                </div>
+                                <span class="live-indicator">LIVE</span>
+                            </div>
+                        </div>
+                        <p class="room-description">Internships, job hunting, and career advice</p>
+                        <div class="room-tags">
+                            <span class="tag">Career</span>
+                            <span class="tag">Professional</span>
+                        </div>
+                        <button class="join-room-btn">Join Room</button>
+                    </div>
+
+                    <div class="room-card">
+                        <div class="room-header">
+                            <h3>🏀 Sports Talk</h3>
+                            <div class="room-participants">
+                                <div class="participant-avatars">
+                                    <img src="https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="User">
+                                    <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="User">
+                                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="User">
+                                    <span class="participant-count">+6</span>
+                                </div>
+                                <span class="live-indicator">LIVE</span>
+                            </div>
+                        </div>
+                        <p class="room-description">College sports, March Madness, and game discussions</p>
+                        <div class="room-tags">
+                            <span class="tag">Sports</span>
+                            <span class="tag">College Sports</span>
+                        </div>
+                        <button class="join-room-btn">Join Room</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Startup Hub Section -->
+        <section id="startup" class="content-section">
+            <div class="startup-container">
+                <div class="startup-header">
+                    <h1>🚀 Startup Hub</h1>
+                    <p>Connect with fellow entrepreneurs, find co-founders, and bring your ideas to life</p>
+                </div>
+
+                <div class="startup-tabs">
+                    <button class="tab-btn active" data-tab="ideas">💡 Ideas</button>
+                    <button class="tab-btn" data-tab="founders">👥 Find Co-founders</button>
+                    <button class="tab-btn" data-tab="mentors">🎯 Mentors</button>
+                    <button class="tab-btn" data-tab="funding">💰 Funding</button>
+                </div>
+
+                <div class="tab-content">
+                    <div id="ideas" class="tab-panel active">
+                        <div class="ideas-grid">
+                            <div class="idea-card featured">
+                                <div class="idea-header">
+                                    <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop" alt="User" class="idea-avatar">
+                                    <div class="idea-info">
+                                        <h4>Sarah Chen</h4>
+                                        <p>CS @ MIT • Looking for: Technical Co-founder</p>
+                                    </div>
+                                    <span class="featured-badge">Featured</span>
+                                </div>
+                                <div class="idea-content">
+                                    <h3>🎓 EduTrack - Student Progress Analytics</h3>
+                                    <p>AI-powered platform that analyzes student learning patterns and provides personalized study recommendations. Already have 500+ beta users!</p>
+                                    <div class="idea-tags">
+                                        <span class="tag">EdTech</span>
+                                        <span class="tag">AI/ML</span>
+                                        <span class="tag">B2B</span>
+                                    </div>
+                                    <div class="idea-stats">
+                                        <span>💰 Seeking: $50K seed</span>
+                                        <span>⏰ Posted 2 days ago</span>
+                                        <span>👀 124 views</span>
+                                    </div>
+                                </div>
+                                <div class="idea-actions">
+                                    <button class="connect-btn">Connect</button>
+                                    <button class="save-btn">Save</button>
+                                </div>
+                            </div>
+
+                            <div class="idea-card">
+                                <div class="idea-header">
+                                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop" alt="User" class="idea-avatar">
+                                    <div class="idea-info">
+                                        <h4>Alex Rodriguez</h4>
+                                        <p>Business @ UC Berkeley • Looking for: Developer</p>
+                                    </div>
+                                </div>
+                                <div class="idea-content">
+                                    <h3>🌱 GreenCampus - Sustainability Tracker</h3>
+                                    <p>Mobile app helping college students track and reduce their carbon footprint. Includes challenges, rewards, and campus-wide competitions.</p>
+                                    <div class="idea-tags">
+                                        <span class="tag">Sustainability</span>
+                                        <span class="tag">Mobile</span>
+                                        <span class="tag">Social Impact</span>
+                                    </div>
+                                    <div class="idea-stats">
+                                        <span>💰 Bootstrapped</span>
+                                        <span>⏰ Posted 5 days ago</span>
+                                        <span>👀 89 views</span>
+                                    </div>
+                                </div>
+                                <div class="idea-actions">
+                                    <button class="connect-btn">Connect</button>
+                                    <button class="save-btn">Save</button>
+                                </div>
+                            </div>
+
+                            <div class="idea-card">
+                                <div class="idea-header">
+                                    <img src="https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop" alt="User" class="idea-avatar">
+                                    <div class="idea-info">
+                                        <h4>Maya Patel</h4>
+                                        <p>Engineering @ Stanford • Looking for: Business Co-founder</p>
+                                    </div>
+                                </div>
+                                <div class="idea-content">
+                                    <h3>🏠 DormMate - Smart Roommate Matching</h3>
+                                    <p>Algorithm-based platform that uses personality tests, lifestyle preferences, and academic schedules to find perfect roommate matches.</p>
+                                    <div class="idea-tags">
+                                        <span class="tag">PropTech</span>
+                                        <span class="tag">Algorithm</span>
+                                        <span class="tag">Student Life</span>
+                                    </div>
+                                    <div class="idea-stats">
+                                        <span>💰 Pre-revenue</span>
+                                        <span>⏰ Posted 1 week ago</span>
+                                        <span>👀 156 views</span>
+                                    </div>
+                                </div>
+                                <div class="idea-actions">
+                                    <button class="connect-btn">Connect</button>
+                                    <button class="save-btn">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="load-more-btn">Load More Ideas</button>
+                    </div>
+
+                    <div id="founders" class="tab-panel">
+                        <div class="founders-filters">
+                            <select class="filter-select">
+                                <option>All Skills</option>
+                                <option>Frontend Development</option>
+                                <option>Backend Development</option>
+                                <option>Mobile Development</option>
+                                <option>Data Science</option>
+                                <option>Business Development</option>
+                                <option>Marketing</option>
+                                <option>Design</option>
+                            </select>
+                            <select class="filter-select">
+                                <option>All Universities</option>
+                                <option>Stanford</option>
+                                <option>MIT</option>
+                                <option>UC Berkeley</option>
+                                <option>Harvard</option>
+                                <option>Carnegie Mellon</option>
+                            </select>
+                        </div>
+
+                        <div class="founders-grid">
+                            <div class="founder-card">
+                                <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Founder" class="founder-avatar">
+                                <div class="founder-info">
+                                    <h4>David Kim</h4>
+                                    <p>Full-stack Developer @ MIT</p>
+                                    <div class="founder-skills">
+                                        <span class="skill">React</span>
+                                        <span class="skill">Node.js</span>
+                                        <span class="skill">Python</span>
+                                        <span class="skill">AWS</span>
+                                    </div>
+                                    <p class="founder-bio">Looking to build the next big thing in FinTech. 3 years experience, previous intern at Google.</p>
+                                    <div class="founder-badges">
+                                        <span class="badge coding">Coding Wizard</span>
+                                        <span class="badge startup">Startup Enthusiast</span>
+                                    </div>
+                                </div>
+                                <button class="connect-btn">Connect</button>
+                            </div>
+
+                            <div class="founder-card">
+                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Founder" class="founder-avatar">
+                                <div class="founder-info">
+                                    <h4>Emma Wilson</h4>
+                                    <p>Marketing & Business @ Stanford</p>
+                                    <div class="founder-skills">
+                                        <span class="skill">Growth Marketing</span>
+                                        <span class="skill">Analytics</span>
+                                        <span class="skill">Strategy</span>
+                                        <span class="skill">Fundraising</span>
+                                    </div>
+                                    <p class="founder-bio">Passionate about consumer apps and social impact. Previously grew a nonprofit's social media from 0 to 50K followers.</p>
+                                    <div class="founder-badges">
+                                        <span class="badge marketing">Marketing Pro</span>
+                                        <span class="badge leadership">Team Leader</span>
+                                    </div>
+                                </div>
+                                <button class="connect-btn">Connect</button>
+                            </div>
+
+                            <div class="founder-card">
+                                <img src="https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Founder" class="founder-avatar">
+                                <div class="founder-info">
+                                    <h4>Jessica Chen</h4>
+                                    <p>UX Designer @ RISD</p>
+                                    <div class="founder-skills">
+                                        <span class="skill">UI/UX Design</span>
+                                        <span class="skill">Figma</span>
+                                        <span class="skill">User Research</span>
+                                        <span class="skill">Prototyping</span>
+                                    </div>
+                                    <p class="founder-bio">Design-first approach to building products that users love. Experienced in both B2B and B2C design.</p>
+                                    <div class="founder-badges">
+                                        <span class="badge design">Design Expert</span>
+                                        <span class="badge innovation">Innovation Award</span>
+                                    </div>
+                                </div>
+                                <button class="connect-btn">Connect</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="mentors" class="tab-panel">
+                        <div class="mentors-grid">
+                            <div class="mentor-card">
+                                <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Mentor" class="mentor-avatar">
+                                <div class="mentor-info">
+                                    <h4>Prof. Michael Chen</h4>
+                                    <p>Stanford University • Entrepreneurship</p>
+                                    <div class="mentor-expertise">
+                                        <span class="expertise">SaaS</span>
+                                        <span class="expertise">Fundraising</span>
+                                        <span class="expertise">Go-to-Market</span>
+                                    </div>
+                                    <p class="mentor-bio">Former founder of 2 successful startups (acquired by Google & Microsoft). Now helping the next generation of entrepreneurs.</p>
+                                    <div class="mentor-stats">
+                                        <span>⭐ 4.9/5 rating</span>
+                                        <span>👥 Mentored 50+ students</span>
+                                    </div>
+                                </div>
+                                <button class="request-mentor-btn">Request Mentorship</button>
+                            </div>
+
+                            <div class="mentor-card">
+                                <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Mentor" class="mentor-avatar">
+                                <div class="mentor-info">
+                                    <h4>Sarah Rodriguez</h4>
+                                    <p>Venture Partner at Andreessen Horowitz</p>
+                                    <div class="mentor-expertise">
+                                        <span class="expertise">FinTech</span>
+                                        <span class="expertise">Product Strategy</span>
+                                        <span class="expertise">Team Building</span>
+                                    </div>
+                                    <p class="mentor-bio">10+ years in venture capital, invested in 30+ startups. Berkeley alum passionate about supporting student entrepreneurs.</p>
+                                    <div class="mentor-stats">
+                                        <span>⭐ 4.8/5 rating</span>
+                                        <span>👥 Mentored 35+ students</span>
+                                    </div>
+                                </div>
+                                <button class="request-mentor-btn">Request Mentorship</button>
+                            </div>
+
+                            <div class="mentor-card">
+                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Mentor" class="mentor-avatar">
+                                <div class="mentor-info">
+                                    <h4>Dr. Amanda Foster</h4>
+                                    <p>MIT • AI/ML Research</p>
+                                    <div class="mentor-expertise">
+                                        <span class="expertise">AI/ML</span>
+                                        <span class="expertise">Technical Architecture</span>
+                                        <span class="expertise">Research</span>
+                                    </div>
+                                    <p class="mentor-bio">Leading AI researcher with 15+ published papers. Helping students commercialize cutting-edge AI research.</p>
+                                    <div class="mentor-stats">
+                                        <span>⭐ 5.0/5 rating</span>
+                                        <span>👥 Mentored 25+ students</span>
+                                    </div>
+                                </div>
+                                <button class="request-mentor-btn">Request Mentorship</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="funding" class="tab-panel">
+                        <div class="funding-opportunities">
+                            <div class="funding-card">
+                                <div class="funding-header">
+                                    <h3>🏆 Stanford Student Ventures</h3>
+                                    <span class="funding-amount">Up to $25,000</span>
+                                </div>
+                                <p class="funding-description">Early-stage funding for Stanford student startups. Focus on technology solutions with social impact.</p>
+                                <div class="funding-details">
+                                    <div class="detail">
+                                        <strong>Deadline:</strong> March 31, 2024
+                                    </div>
+                                    <div class="detail">
+                                        <strong>Stage:</strong> Idea to MVP
+                                    </div>
+                                    <div class="detail">
+                                        <strong>Requirements:</strong> Current Stanford student
+                                    </div>
+                                </div>
+                                <button class="apply-btn">Apply Now</button>
+                            </div>
+
+                            <div class="funding-card">
+                                <div class="funding-header">
+                                    <h3>💡 Berkeley Innovation Fund</h3>
+                                    <span class="funding-amount">$10,000 - $50,000</span>
+                                </div>
+                                <p class="funding-description">Supporting Berkeley students building innovative solutions in healthcare, sustainability, and education.</p>
+                                <div class="funding-details">
+                                    <div class="detail">
+                                        <strong>Deadline:</strong> April 15, 2024
+                                    </div>
+                                    <div class="detail">
+                                        <strong>Stage:</strong> MVP to Revenue
+                                    </div>
+                                    <div class="detail">
+                                        <strong>Requirements:</strong> UC Berkeley affiliation
+                                    </div>
+                                </div>
+                                <button class="apply-btn">Apply Now</button>
+                            </div>
+
+                            <div class="funding-card">
+                                <div class="funding-header">
+                                    <h3>🚀 Y Combinator Fellowship</h3>
+                                    <span class="funding-amount">$20,000 + Mentorship</span>
+                                </div>
+                                <p class="funding-description">3-month program for early-stage startups with access to YC's network and resources.</p>
+                                <div class="funding-details">
+                                    <div class="detail">
+                                        <strong>Deadline:</strong> Rolling applications
+                                    </div>
+                                    <div class="detail">
+                                        <strong>Stage:</strong> Pre-seed
+                                    </div>
+                                    <div class="detail">
+                                        <strong>Requirements:</strong> Working prototype
+                                    </div>
+                                </div>
+                                <button class="apply-btn">Apply Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Badges Section -->
+        <section id="badges" class="content-section">
+            <div class="badges-container">
+                <div class="badges-header">
+                    <h1>🏆 Badges Marketplace</h1>
+                    <p>Earn, buy, and gift badges to showcase achievements and recognize others</p>
+                    <div class="credits-display">
+                        <span class="credits-amount">💰 Credits: 1,250</span>
+                        <button class="buy-credits-btn">Buy Credits</button>
+                    </div>
+                </div>
+
+                <div class="badges-tabs">
+                    <button class="tab-btn active" data-tab="earned">Earned Badges</button>
+                    <button class="tab-btn" data-tab="marketplace">Marketplace</button>
+                    <button class="tab-btn" data-tab="gifted">Gifted to You</button>
+                </div>
+
+                <div class="tab-content">
+                    <div id="earned" class="tab-panel active">
+                        <div class="my-badges-grid">
+                            <div class="badge-item earned">
+                                <div class="badge-icon coding">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="16,18 22,12 16,6"/>
+                                        <polyline points="8,6 2,12 8,18"/>
+                                    </svg>
+                                </div>
+                                <h4>Coding Wizard</h4>
+                                <p>Mastered advanced programming concepts</p>
+                                <span class="earned-date">Earned 2 weeks ago</span>
+                            </div>
+
+                            <div class="badge-item earned">
+                                <div class="badge-icon leadership">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="8.5" cy="7" r="4"/>
+                                        <path d="M20 8v6"/>
+                                        <path d="M23 11h-6"/>
+                                    </svg>
+                                </div>
+                                <h4>Team Leader</h4>
+                                <p>Successfully led a team project</p>
+                                <span class="earned-date">Earned 1 month ago</span>
+                            </div>
+
+                            <div class="badge-item earned">
+                                <div class="badge-icon volunteer">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </div>
+                                <h4>Volunteer Hero</h4>
+                                <p>Completed 50+ volunteer hours</p>
+                                <span class="earned-date">Earned 3 weeks ago</span>
+                            </div>
+
+                            <div class="badge-item earned">
+                                <div class="badge-icon academic">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                    </svg>
+                                </div>
+                                <h4>Dean's List</h4>
+                                <p>Achieved academic excellence</p>
+                                <span class="earned-date">Earned 2 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="marketplace" class="tab-panel">
+                        <div class="marketplace-categories">
+                            <button class="category-btn active">All Badges</button>
+                            <button class="category-btn">Academic</button>
+                            <button class="category-btn">Social</button>
+                            <button class="category-btn">Professional</button>
+                            <button class="category-btn">Special</button>
+                        </div>
+
+                        <div class="marketplace-grid">
+                            <div class="badge-shop-item">
+                                <div class="badge-icon appreciation">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <h4>Star Performer</h4>
+                                <p>Gift this badge to recognize outstanding achievement</p>
+                                <div class="badge-price">💰 150 Credits</div>
+                                <div class="badge-actions">
+                                    <button class="gift-badge-btn">Gift to Friend</button>
+                                    <button class="preview-btn">Preview</button>
+                                </div>
+                            </div>
+
+                            <div class="badge-shop-item premium">
+                                <div class="premium-tag">Premium</div>
+                                <div class="badge-icon mvp">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                                        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                                        <path d="M4 22h16"/>
+                                        <path d="M10 14.66V17c0 .55.47.98.97 1.21C12.04 18.75 13 19.88 13 21.02V22"/>
+                                        <path d="M14 14.66V17c0 .55-.47.98-.97 1.21C11.96 18.75 11 19.88 11 21.02V22"/>
+                                        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+                                    </svg>
+                                </div>
+                                <h4>MVP Champion</h4>
+                                <p>Exclusive badge for exceptional contributions</p>
+                                <div class="badge-price">💰 500 Credits</div>
+                                <div class="badge-actions">
+                                    <button class="gift-badge-btn">Gift to Friend</button>
+                                    <button class="preview-btn">Preview</button>
+                                </div>
+                            </div>
+
+                            <div class="badge-shop-item">
+                                <div class="badge-icon mentor">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 9V5a3 3 0 0 0-6 0v4"/>
+                                        <path d="M3 11h18l-2 7H5l-2-7z"/>
+                                        <path d="M7 15h.01"/>
+                                        <path d="M17 15h.01"/>
+                                    </svg>
+                                </div>
+                                <h4>Helpful Mentor</h4>
+                                <p>Recognize someone who provided great guidance</p>
+                                <div class="badge-price">💰 200 Credits</div>
+                                <div class="badge-actions">
+                                    <button class="gift-badge-btn">Gift to Friend</button>
+                                    <button class="preview-btn">Preview</button>
+                                </div>
+                            </div>
+
+                            <div class="badge-shop-item">
+                                <div class="badge-icon creative">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M8 2v4"/>
+                                        <path d="M16 2v4"/>
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                        <path d="M3 10h18"/>
+                                        <path d="M8 14h.01"/>
+                                        <path d="M12 14h.01"/>
+                                        <path d="M16 14h.01"/>
+                                        <path d="M8 18h.01"/>
+                                        <path d="M12 18h.01"/>
+                                        <path d="M16 18h.01"/>
+                                    </svg>
+                                </div>
+                                <h4>Creative Genius</h4>
+                                <p>Perfect for recognizing innovative thinking</p>
+                                <div class="badge-price">💰 180 Credits</div>
+                                <div class="badge-actions">
+                                    <button class="gift-badge-btn">Gift to Friend</button>
+                                    <button class="preview-btn">Preview</button>
+                                </div>
+                            </div>
+
+                            <div class="badge-shop-item">
+                                <div class="badge-icon friendship">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </div>
+                                <h4>Best Friend</h4>
+                                <p>Show appreciation for an amazing friendship</p>
+                                <div class="badge-price">💰 120 Credits</div>
+                                <div class="badge-actions">
+                                    <button class="gift-badge-btn">Gift to Friend</button>
+                                    <button class="preview-btn">Preview</button>
+                                </div>
+                            </div>
+
+                            <div class="badge-shop-item limited">
+                                <div class="limited-tag">Limited Edition</div>
+                                <div class="badge-icon exclusive">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                        <path d="M2 17l10 5 10-5"/>
+                                        <path d="M2 12l10 5 10-5"/>
+                                    </svg>
+                                </div>
+                                <h4>Unicorn Achiever</h4>
+                                <p>Ultra-rare badge for exceptional accomplishments</p>
+                                <div class="badge-price">💰 1,000 Credits</div>
+                                <div class="stock-info">Only 50 remaining</div>
+                                <div class="badge-actions">
+                                    <button class="gift-badge-btn">Gift to Friend</button>
+                                    <button class="preview-btn">Preview</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="gifted" class="tab-panel">
+                        <div class="gifted-badges">
+                            <div class="gifted-badge-item">
+                                <div class="badge-info">
+                                    <div class="badge-icon appreciation">
+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="badge-details">
+                                        <h4>Star Performer</h4>
+                                        <p>For your amazing presentation in CS class!</p>
+                                    </div>
+                                </div>
+                                <div class="gifter-info">
+                                    <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="Gifter">
+                                    <div>
+                                        <span class="gifter-name">Sarah Chen</span>
+                                        <span class="gift-date">2 days ago</span>
+                                    </div>
+                                </div>
+                                <div class="badge-actions">
+                                    <button class="thank-btn">Send Thanks</button>
+                                    <button class="display-btn">Add to Profile</button>
+                                </div>
+                            </div>
+
+                            <div class="gifted-badge-item">
+                                <div class="badge-info">
+                                    <div class="badge-icon mentor">
+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M14 9V5a3 3 0 0 0-6 0v4"/>
+                                            <path d="M3 11h18l-2 7H5l-2-7z"/>
+                                            <path d="M7 15h.01"/>
+                                            <path d="M17 15h.01"/>
+                                        </svg>
+                                    </div>
+                                    <div class="badge-details">
+                                        <h4>Helpful Mentor</h4>
+                                        <p>Thanks for helping me with my startup pitch!</p>
+                                    </div>
+                                </div>
+                                <div class="gifter-info">
+                                    <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="Gifter">
+                                    <div>
+                                        <span class="gifter-name">Alex Rodriguez</span>
+                                        <span class="gift-date">1 week ago</span>
+                                    </div>
+                                </div>
+                                <div class="badge-actions">
+                                    <button class="thank-btn">Send Thanks</button>
+                                    <button class="display-btn">Add to Profile</button>
+                                </div>
+                            </div>
+
+                            <div class="gifted-badge-item">
+                                <div class="badge-info">
+                                    <div class="badge-icon friendship">
+                                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="badge-details">
+                                        <h4>Best Friend</h4>
+                                        <p>For always being there when I need you 💙</p>
+                                    </div>
+                                </div>
+                                <div class="gifter-info">
+                                    <img src="https://images.pexels.com/photos/1181534/pexels-photo-1181534.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="Gifter">
+                                    <div>
+                                        <span class="gifter-name">Maya Patel</span>
+                                        <span class="gift-date">2 weeks ago</span>
+                                    </div>
+                                </div>
+                                <div class="badge-actions">
+                                    <button class="thank-btn">Send Thanks</button>
+                                    <button class="display-btn">Add to Profile</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Proximity Notification -->
+    <div id="proximityNotification" class="proximity-notification">
+        <div class="notification-content">
+            <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" alt="Friend">
+            <div class="notification-text">
+                <strong>Alex Rodriguez</strong> is nearby (0.8km away)
+            </div>
+            <button class="notification-action">Say Hi!</button>
+        </div>
+    </div>
+
+    <!-- Gift Badge Modal -->
+    <div id="giftBadgeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>🎁 Gift Badge</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="selected-badge">
+                    <div class="badge-icon appreciation">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h4>Star Performer</h4>
+                    <p>💰 150 Credits</p>
+                </div>
+                <div class="gift-form">
+                    <label>Search for a friend:</label>
+                    <input type="text" placeholder="Type friend's name..." class="friend-search">
+                    <div class="friend-suggestions">
+                        <div class="friend-suggestion">
+                            <img src="https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="Friend">
+                            <span>Sarah Chen</span>
+                        </div>
+                        <div class="friend-suggestion">
+                            <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=40&h=40&fit=crop" alt="Friend">
+                            <span>Alex Rodriguez</span>
+                        </div>
+                    </div>
+                    <label>Personal message (optional):</label>
+                    <textarea placeholder="Add a personal message with your gift..."></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="cancel-btn">Cancel</button>
+                <button class="confirm-gift-btn">Send Gift (150 Credits)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
